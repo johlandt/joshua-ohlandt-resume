@@ -192,6 +192,37 @@
     </ul>
   </section>
 
+  <section>
+  <h2 class="section-title">More</h2>
+  <div style="text-align:center;">
+    <button onclick="togglePopup('volunteeringPopup')" style="padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border:none; border-radius:5px; margin:0.5rem; cursor:pointer;">Volunteering</button>
+    <button onclick="togglePopup('booksPopup')" style="padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border:none; border-radius:5px; margin:0.5rem; cursor:pointer;">Must Read Books</button>
+  </div>
+</section>
+
+<!-- Volunteering Popup -->
+<div id="volunteeringPopup" class="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:2rem; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3); max-width:500px; z-index:1000;">
+  <h3>Volunteering</h3>
+  <ul>
+    <li><strong>Early Childhood Educator</strong> (2021–present): Teaching pre-K thru 6th grade children.</li>
+    <li><strong>Volunteer Manager</strong> (2023–present): Coordinating service initiatives, food drives, visitations, and logistical support for events serving 100+ community members weekly.</li>
+  </ul>
+</div>
+
+<!-- Must Read Books Popup -->
+<div id="booksPopup" class="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:2rem; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.3); max-width:500px; z-index:1000;">
+  <h3>Must Read Books</h3>
+  <ul>
+    <li><a href="https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs/dp/1250183863" target="_blank">Extreme Ownership</a> by Jocko Willink, Leif Babin</li>
+    <li><a href="https://www.amazon.com/Comfort-Crisis-Embrace-Discomfort-Reclaim/dp/0593138767" target="_blank">The Comfort Crisis</a> by Michael Easter</li>
+    <li><a href="https://www.amazon.com/Tribe-Homecoming-Belonging-Sebastian-Junger/dp/1455566381" target="_blank">Tribe</a> by Sebastian Junger</li>
+    <li><a href="https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805" target="_blank">Never Split the Difference</a> by Chris Voss</li>
+    <li><a href="https://www.amazon.com/Leaders-Eat-Last-Together-Others/dp/1591848016" target="_blank">Leaders Eat Last</a> by Simon Sinek</li>
+    <li><a href="https://www.amazon.com/LikeWar-Weaponization-Social-P-W-Singer/dp/1328695743" target="_blank">Like War</a> by P. W. Singer</li>
+    <li><a href="https://www.amazon.com/Disney-Ran-Your-Hospital-Common/dp/0974386014" target="_blank">If Disney Ran Your Hospital</a> by Fred Lee</li>
+  </ul>
+</div>
+  
    <section>
     <h2 class="section-title">Testimonials</h2>
     <p style="text-align:center;color:#64748b;">“...Josh would be an asset to any team....”</p>
@@ -206,6 +237,10 @@
      function toggleConnect() {
       const options = document.getElementById('connect-options');
       options.style.display = options.style.display === 'none' ? 'block' : 'none';
+    }
+     function togglePopup(id) {
+      const popup = document.getElementById(id);
+      popup.style.display = (popup.style.display === 'none' || popup.style.display === '') ? 'block' : 'none';
     }
     const chartData = [
       {id: 'chart1', labels: ['Events Managed', 'Time Saved (%)', 'Goal Surpassed (%)'], data: [80, 14, 5]},
