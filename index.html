@@ -30,13 +30,29 @@
   <header>
     <h1>Joshua Ohlandt</h1>
     <p>Project Manager | Consultant | USAF Veteran</p>
-    <p>PMP | Secret Clearance | johlandt@gmail.com | (702) 506-7301</p>
+    <p>PMP | Secret Clearance | johlandt@gmail.com </p>
     <a href="Joshua_Ohlandt_Resume.pdf" download>Download PDF Resume</a>
   </header>
 
+  <section style="text-align:center; margin-top: 1rem;">
+    <button onclick="toggleConnect()" class="connect-btn">Connect with Me</button>
+    <div id="connect-options" class="connect-options" style="display:none; margin-top:1rem;">
+      <a href="https://www.linkedin.com/in/joshua-ohlandt?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="background:#0a66c2;">LinkedIn</a>
+      <a href="mailto:johlandt@gmail.com" style="background:#10b981;">Email</a>
+    </div>
+  </section>
+  
   <section>
     <h2 class="section-title">Professional Summary</h2>
     <p>Seasoned Project Manager with over 15 years of leadership in healthcare and federal operations. Expert in driving operational efficiency, managing cross-functional teams, and delivering strategic growth. Adept at building project management systems, guiding multimillion-dollar budgets, and enhancing mission readiness in high-stakes environments.</p>
+    <h2 class="section-title">Career Metrics Dashboard</h2>
+    <div style="display:flex;justify-content:space-around;flex-wrap:wrap;">
+      <div style="text-align:center;"><h3>15+</h3><p>Years of Experience</p></div>
+      <div style="text-align:center;"><h3>305</h3><p>Team Members Led</p></div>
+      <div style="text-align:center;"><h3>$8M+</h3><p>Budgets Managed</p></div>
+      <div style="text-align:center;"><h3>7</h3><p>Projects led</p></div>
+      <div style="text-align:center;"><h3>8</h3><p>Federal Agencies Supported</p></div>
+    </div>
   </section>
 
   <section>
@@ -44,12 +60,12 @@
 
     <div class="experience">
       <div class="job-title">Project Manager</div>
-      <div class="company">Consensus Solutions – U.S. Navy | Washington, DC</div>
+      <div class="company">Consensus Solutions | Washington, DC</div>
       <div class="dates">Mar 2024 – Present</div>
       <ul>
         <li>Directed Navy mobile app development; launched in &lt;5 months, enabling on-site industrial partner support.</li>
         <li>Led communication strategy for 80+ events; surpassed Small Business spending goal by 5%.</li>
-        <li>Modernized workforce program, reducing human error and saving 14% admin time for 200 staff.</li>
+        <li>Modernized workforce program, created automated platform, reducing human error and saving 14% admin time for 200 staff.</li>
       </ul>
       <canvas id="chart1"></canvas>
     </div>
@@ -60,7 +76,7 @@
       <div class="dates">Apr 2022 – Mar 2024</div>
       <ul>
         <li>Expanded DoD team to $5M+ annual revenue; managed 7 federal projects with 16 matrixed staff.</li>
-        <li>Delivered SOPs and strategic plan for CRADA research institute, securing $8M congressional funding.</li>
+        <li>Delivered SOPs and strategic plan for research institute, securing $8M congressional funding.</li>
         <li>Developed portfolio tracking tools, improving resource allocation and project visibility.</li>
       </ul>
       <canvas id="chart2"></canvas>
@@ -68,11 +84,11 @@
 
     <div class="experience">
       <div class="job-title">Healthcare Operations Manager, ICU</div>
-      <div class="company">U.S. Air Force</div>
+      <div class="company">U.S. Air Force | Bethesda, MD</div>
       <div class="dates">Oct 2018 – Apr 2022</div>
       <ul>
         <li>Directed 267 cross-functional personnel; managed $3.6M budget for ICU operations.</li>
-        <li>Led pandemic ICU surge; increased capacity by 45% while operating at 45% staffing.</li>
+        <li>Led pandemic ICU surge; increased capacity by 51% while operating at 45% staffing.</li>
         <li>Implemented Lean Six Sigma improvements, cutting onboarding time by 20%.</li>
       </ul>
       <canvas id="chart3"></canvas>
@@ -80,7 +96,7 @@
 
     <div class="experience">
       <div class="job-title">Healthcare Ops Manager, Allergy Clinic</div>
-      <div class="company">U.S. Air Force</div>
+      <div class="company">U.S. Air Force | Mt. Home, ID</div>
       <div class="dates">Nov 2011 – Sep 2017</div>
       <ul>
         <li>Oversaw 15K+ annual vaccinations; improved efficiency by 30% through process redesign.</li>
@@ -90,6 +106,38 @@
       <canvas id="chart4"></canvas>
     </div>
   </section>
+
+  <!-- Button to show more -->
+<div style="text-align:center; margin-top:1rem;">
+  <button onclick="document.getElementById('expanded-experience').style.display='block'; this.style.display='none';"
+          style="padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border:none; border-radius:5px; cursor:pointer;">
+    Full Work History
+  </button>
+</div>
+
+<!-- Hidden expanded experience -->
+<div id="expanded-experience" style="display:none; margin-top:2rem;">
+  <div class="experience">
+    <div class="job-title">EMT</div>
+    <div class="company">U.S. Air Force | Las Vegas, NV</div>
+    <div class="dates">Mar 2008 – Oct 2011</div>
+    <ul>
+      <li>Certified in BLS, ACLS, Basic pharmacology to provide emergency care to 90K patients annually</li>
+      <li>Deployed in support of Operation Enduring Freedom, truama team, cared for 20K NATO troops</li>
+      <li>Promoted above peers to shift lead 2nd busiest ER in AF, led teams of 12+</li>
+    </ul>
+    <canvas id="chart5"></canvas>
+  </div>
+
+  <!-- Close button -->
+  <div style="text-align:center; margin-top:1rem;">
+    <button onclick="document.getElementById('expanded-experience').style.display='none'; 
+                     document.querySelector('button[onclick*=expanded-experience]').style.display='inline-block';"
+            style="padding:0.6rem 1.2rem; background:#64748b; color:white; border:none; border-radius:5px; cursor:pointer;">
+      Show Less
+    </button>
+  </div>
+</div>
 
   <section>
     <h2 class="section-title">Skills</h2>
@@ -129,6 +177,12 @@
     </ul>
   </section>
 
+   <section>
+    <h2 class="section-title">Testimonials</h2>
+    <p style="text-align:center;color:#64748b;">“...Josh would be an asset to any team....”</p>
+    <p style="text-align:center;color:#64748b;">Recognized for “Best Clinic in the Department of Defense”</p>
+  </section>
+  
   <footer>
     <p> © 2025 Joshua Ohlandt</p>
   </footer>
