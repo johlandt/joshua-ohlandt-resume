@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua Ohlandt | Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; background-color: #f4f7fa; color: #1f2937; scroll-behavior: smooth; }
+    header { background-color: #002244; color: white; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin: 0.5rem 0; font-weight: 300; }
+    header a { display:inline-block; margin-top:1rem; padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border-radius:5px; text-decoration:none; }
+    section { max-width: 960px; margin: auto; padding: 2rem 1rem; }
+    .section-title { font-size: 1.5rem; color: #002244; border-bottom: 2px solid #94a3b8; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    .skills, .certifications { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-tag, .cert-tag { background: #e2e8f0; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
+    footer { text-align: center; background-color: #002244; color: white; padding: 1rem; margin-top: 2rem; }
+    .connect-btn { padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border:none; border-radius:5px; cursor:pointer; }
+    .connect-options a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: #1d4ed8;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .connect-options a:hover { background: #0a4fc5; }
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .timeline-item {
+      flex: 1 1 250px;
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 300px;
+    }
+    .timeline-content h3 {
+      margin-top: 0;
+      color: #1d4ed8;
+    }
+    .timeline-content h4 {
+      margin: 0.5rem 0;
+      color: #475569;
+      font-size: 1rem;
+    }
+    .timeline-content p {
+      margin: 0.5rem 0 1rem;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joshua Ohlandt</h1>
+    <p>Project Manager | Consultant | USAF Veteran</p>
+    <p>PMP | Secret Clearance | johlandt@gmail.com </p>
+    <a href="Joshua_Ohlandt_Resume.pdf" download>Download PDF Resume</a>
+  </header>
+
+  <section style="text-align:center; margin-top: 1rem;">
+    <button onclick="toggleConnect()" class="connect-btn">Connect with Me</button>
+    <div id="connect-options" class="connect-options" style="display:none; margin-top:1rem;">
+      <a href="https://www.linkedin.com/in/joshua-ohlandt?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+      <a href="mailto:johlandt@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Professional Summary</h2>
+    <p>Seasoned Project Manager with over 15 years of leadership in healthcare and federal operations. Expert in driving operational efficiency, managing cross-functional teams, and delivering strategic growth. Adept at building project management systems, guiding multimillion-dollar budgets, and enhancing mission readiness in high-stakes environments.</p>
+    <h2 class="section-title">Career Metrics Dashboard</h2>
+    <div style="display:flex;justify-content:space-around;flex-wrap:wrap;">
+      <div style="text-align:center;"><h3>17+</h3><p>Years of Experience</p></div>
+      <div style="text-align:center;"><h3>305</h3><p>Team Members Led</p></div>
+      <div style="text-align:center;"><h3>$8M+</h3><p>Budgets Managed</p></div>
+      <div style="text-align:center;"><h3>7</h3><p>Projects led</p></div>
+      <div style="text-align:center;"><h3>8</h3><p>Federal Agencies Supported</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Project Manager</h3>
+          <h4>Consensus Solutions | Washington, DC</h4>
+          <p><em>Mar 2024 – Present</em></p>
+          <ul>
+            <li>Directed <a href="https://www.secnav.navy.mil/osbp/homepage.aspx" target="_blank">Navy mobile app</a> development; launched in &lt;5 months.</li>
+            <li>Led communication strategy for 80+ events; surpassed Small Business spending goal by 5%.</li>
+            <li>Modernized workforce program, automated platform reduced errors and saved 14% admin time.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Management Consultant (DoD)</h3>
+          <h4>The Clearing | Washington, DC</h4>
+          <p><em>Apr 2022 – Mar 2024</em></p>
+          <ul>
+            <li>Expanded DoD team to $5M+ annual revenue; managed 7 federal projects with 16 matrixed staff.</li>
+            <li>Delivered SOPs and strategic plan for <a href="https://dscu.edu/bgcy-ralli" target="_blank">research institute</a>, securing $8M congressional funding.</li>
+            <li>Developed portfolio tracking tools, improving resource allocation and project visibility.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Healthcare Operations Manager, ICU</h3>
+          <h4>U.S. Air Force | Bethesda, MD</h4>
+          <p><em>Oct 2018 – Apr 2022</em></p>
+          <ul>
+            <li>Directed 267 personnel; managed $3.6M ICU operations budget.</li>
+            <li>Led <a href="https://www.airandspaceforces.com/walter-reed-says-its-ready-for-a-holiday-covid-19-surge/" target="_blank">pandemic ICU surge</a>; increased capacity by 51% while operating at 45% staffing.</li>
+            <li>Implemented Lean Six Sigma improvements, cutting onboarding time by 20%.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:1rem;">
+      <button onclick="document.getElementById('full-history').style.display='flex'; this.style.display='none';"
+              style="padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border:none; border-radius:5px; cursor:pointer;">
+        Show Full Work History
+      </button>
+    </div>
+
+    <div id="full-history" class="timeline" style="display:none; margin-top:2rem;">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>Healthcare Ops Manager, Allergy Clinic</h3>
+          <h4>U.S. Air Force | Mt. Home, ID</h4>
+          <p><em>Nov 2011 – Sep 2017</em></p>
+          <ul>
+            <li>Oversaw 15K+ annual vaccinations; improved efficiency by 30% through process redesign.</li>
+            <li>Managed hospital’s second-largest budget; ensured financial accountability and readiness.</li>
+            <li>Led emergency response training with civilian and military teams, boosting mission capabilities.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>EMT</h3>
+          <h4>U.S. Air Force | Las Vegas, NV</h4>
+          <p><em>Mar 2008 – Oct 2011</em></p>
+          <ul>
+            <li>Certified in BLS, ACLS; provided emergency care to 90K patients annually.</li>
+            <li>Deployed in support of Operation Enduring Freedom; trauma team cared for 20K NATO troops.</li>
+            <li>Promoted above peers to shift lead in 2nd busiest ER in AF; led teams of 12+.</li>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:1rem; width:100%;">
+        <button onclick="document.getElementById('full-history').style.display='none'; 
+                         document.querySelector('button[onclick*=full-history]').style.display='inline-block';"
+                style="padding:0.6rem 1.2rem; background:#64748b; color:white; border:none; border-radius:5px; cursor:pointer;">
+          Show Less
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill-tag">Project Management</div>
+      <div class="skill-tag">Process Improvement</div>
+      <div class="skill-tag">Strategic Planning</div>
+      <div class="skill-tag">Stakeholder Engagement</div>
+      <div class="skill-tag">Healthcare Ops</div>
+      <div class="skill-tag">Agile</div>
+      <div class="skill-tag">Lean Six Sigma</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Joshua Ohlandt</p>
+  </footer>
+
+  <script>
+    function toggleConnect() {
+      const options = document.getElementById('connect-options');
+      options.style.display = options.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
