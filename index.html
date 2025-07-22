@@ -9,15 +9,15 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body { font-family: 'Inter', sans-serif; margin: 0; background-color: #f4f7fa; color: #1f2937; scroll-behavior: smooth; }
-     header {
-        background-image: url('Header_Josh.png'); 
-        background-size: cover;
-        background-position: center;
-        background-attachment: scroll; /* moves with the page */
-        color: white;
-        padding: 2rem;
-        text-align: center;
-      }
+    header {
+      background-image: url('Header_Josh.png'); 
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
     header h1 { margin: 0; font-size: 2.5rem; }
     header p { margin: 0.5rem 0; font-weight: 300; }
     header a { display:inline-block; margin-top:1rem; padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border-radius:5px; text-decoration:none; }
@@ -149,7 +149,7 @@
       <div class="dates">Mar 2008 – Oct 2011</div>
       <ul>
         <li>Certified in BLS, ACLS, Basic pharmacology to provide emergency care to 90K patients annually</li>
-        <li>Deployed in support of Operation Enduring Freedom, truama team, cared for 20K NATO troops</li>
+        <li>Deployed in support of Operation Enduring Freedom, trauma team, cared for 20K NATO troops</li>
         <li>Promoted above peers to shift lead 2nd busiest ER in AF, led teams of 12+</li>
       </ul>
       <canvas id="chart5"></canvas>
@@ -273,7 +273,10 @@
             backgroundColor: ['#1d4ed8', '#3b82f6', '#60a5fa']
           }]
         },
-        options: { responsive: true, plugins: { legend: { display: false } } }
+        options: { 
+          responsive: true,
+          maintainAspectRatio: false, 
+          plugins: { legend: { display: false } }
       });
     });
   </script>
