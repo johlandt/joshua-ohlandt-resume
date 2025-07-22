@@ -15,12 +15,17 @@
     header a { display:inline-block; margin-top:1rem; padding:0.6rem 1.2rem; background:#1d4ed8; color:white; border-radius:5px; text-decoration:none; }
     section { max-width: 960px; margin: auto; padding: 2rem 1rem; }
     .section-title { font-size: 1.5rem; color: #002244; border-bottom: 2px solid #94a3b8; padding-bottom: 0.5rem; margin-bottom: 1rem; }
-    .experience { margin-bottom: 3rem; }
+    .experience { margin-bottom: 2rem; }
     .job-title { font-weight: 700; font-size: 1.2rem; }
     .company { font-weight: 500; color: #475569; }
     .dates { font-size: 0.9rem; color: #64748b; margin-bottom: 0.5rem; }
     ul { padding-left: 1.2rem; }
-    canvas { max-width: 600px; margin-top: 1rem; }
+    canvas { 
+    max-width: 600px; 
+    margin-top: 1rem; 
+    height: 300px !important; /* fixed height */
+    width: 100% !important;   /* responsive width */
+  }
     .skills, .certifications { display: flex; flex-wrap: wrap; gap: 0.5rem; }
     .skill-tag, .cert-tag { background: #e2e8f0; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
     footer { text-align: center; background-color: #002244; color: white; padding: 1rem; margin-top: 2rem; }
@@ -246,7 +251,7 @@
     const chartData = [
       {id: 'chart1', labels: ['Events Managed', 'Time Saved (%)', 'Goal Surpassed (%)'], data: [80, 14, 5]},
       {id: 'chart2', labels: ['Revenue ($M)', 'Projects', 'Team Size'], data: [5, 7, 16]},
-      {id: 'chart3', labels: ['Personnel', 'Onboaring time Decrease (%)', 'Capacity Increase (%)'], data: [267, 20, 57]},
+      {id: 'chart3', labels: ['Personnel', 'Onboarding time Decrease (%)', 'Capacity Increase (%)'], data: [267, 20, 57]},
       {id: 'chart4', labels: ['Vaccinations (K)', 'Efficiency Increase (%)'], data: [15, 30]}
     ];
     chartData.forEach(cfg => {
